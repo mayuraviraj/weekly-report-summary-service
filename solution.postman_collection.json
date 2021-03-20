@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "03693fdb-8a6d-4b93-abb5-26a195b56c79",
+		"name": "solution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/getweeklysummary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"project_id\" : \"sample_project\",\n    \"from_week\" : \"2017W01\",\n    \"to_week\" : \"2017W20\",\n    \"types\" :[\"bug\", \"cr\"],\n    \"states\" :[\"open\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/getweeklysummary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getweeklysummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8085/issuetracker/getissues",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"project_id\": \"sample_project\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/issuetracker/getissues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"issuetracker",
+						"getissues"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
