@@ -11,7 +11,7 @@ Configuration
 issue.tracker.api - This property should be point to third party issue tracking system. For development use default with locally running simulator provided in third-party-api-sim project
 redis.server - Redis server
 redis.port - port for Redis server
-data.cache.service - If redis server is not available service can be run with local cache. Use "local" value for this. To switch to redis, use "redis" value.
+data.cache.service - If redis server is not available service can be run with local cache. Use "local" value for this. To switch to redis, use "redis" value. System is tested with redis standalone server. Cluster connection configuration still pending since we need proper Redis cluster to do that. Currently i don't have one.
 
 
 Test Coverage
