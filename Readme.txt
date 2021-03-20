@@ -18,6 +18,11 @@ Test Coverage
 -------------
 Test coverage is 44% as per Intellij IDEA. Added test cases are basic to cover happy path
 
+Running and testing
+-------------------
+mvn clean install will produce a runnable jar.
+Please use attached postman script for testing.
+
 Pending
 -------
 1. Update Redis with redis cluster connections
