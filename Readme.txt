@@ -16,7 +16,7 @@ data.cache.service - If redis server is not available service can be run with lo
 
 Test Coverage
 -------------
-Test coverage is 44% as per Intellij IDEA. Added test cases are basic to cover happy path
+Test coverage is 44% as per Intellij IDEA. Added test cases are only to cover happy path.
 
 Running and testing
 -------------------
